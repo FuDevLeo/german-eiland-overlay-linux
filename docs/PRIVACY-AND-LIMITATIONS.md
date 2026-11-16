@@ -26,6 +26,8 @@ The F8 bridge forwards the user's push-to-talk press/release to the official app
 
 ## Validation limits and cooperation
 
+The user confirmed working microphone and voice communication in the original Fedora KDE installation, and reported that fullscreen resolved the desktop-edge issue. The latest shop-list scrolling fix was not separately confirmed. These reports do not replace a clean-machine test of the portable launcher.
+
 One local session is evidence that the approach can work; it is not certification of the portable package, a server-policy decision, or proof of anti-cheat safety. The server owner's permission to distribute or recommend this integration has not been established. Ask the owner to review the approach and preferably provide a supported API or native Linux build.
 
 When reporting a bug, describe the desktop session, overlay version, Proton version, steps, and visible result. Review/redact logs yourself before sharing; do not send cookies, Steam identifiers, private profiles, or a full troubleshooting directory.

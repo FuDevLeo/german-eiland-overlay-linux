@@ -134,7 +134,7 @@ Procure **German Eiland Overlay (Linux prototype)** no menu. Use esse atalho par
 | --- | --- |
 | F6 | Esconder/mostrar o overlay |
 | F7 | Alternar o bloqueio de cliques: jogar / mexer nos controles do overlay |
-| F8 | Falar enquanto segura; a transmissão de voz ainda precisa de validação completa |
+| F8 | Falar enquanto segura; microfone e comunicação por voz confirmados na instalação original |
 | F9 | Silenciar o microfone |
 | 5 | Mostrar/esconder a barra de menu |
 | Ctrl+S | Travar/destravar o posicionamento dos elementos |
@@ -154,8 +154,8 @@ Os atalhos refletem a configuração atual do overlay e são registrados pelo KD
 | Atalhos só funcionam na janela do overlay | Confira o KDE/KGlobalAccel, conflitos de teclas e se o jogo está em foco. |
 | Mensagem de porta ocupada | Feche a instância anterior ou use `--port 9341`; não mate o jogo nem abra a porta na rede. |
 | Lista de espécies atrás da janela | O helper tenta substituir o seletor por uma lista dentro da página. Uma atualização do site pode exigir ajuste. |
-| Microfone falha | Confira o dispositivo de entrada do Fedora e a permissão do aplicativo. A captura local foi testada; comunicação entre jogadores não foi validada. |
-| Barra do KDE ou foco atrapalham o jogo | A janela do overlay usa uma categoria especial para ficar acima da tela cheia. Esse contorno ainda precisa de validação mais ampla. |
+| Microfone falha | Confira o dispositivo de entrada do Fedora e a permissão do aplicativo. O usuário confirmou microfone e comunicação por voz funcionando na instalação original. |
+| Barra do KDE ou foco atrapalham o jogo | O usuário informou que usar tela cheia resolveu o problema da borda da área de trabalho. A janela do overlay usa uma categoria especial para ficar acima do jogo. Outras instalações ainda precisam de testes. |
 
 Os registros ficam somente no computador, em `~/.local/state/german-eiland-overlay-linux/launch.log`. Eles podem conter caminhos e mensagens de uso: **revise e oculte dados antes de compartilhar qualquer trecho**.
 
@@ -179,7 +179,7 @@ Para remover, feche o overlay/iniciador e remova o atalho `~/.local/share/applic
 ## O que ainda precisa de revisão
 
 - Instalação completa em outra máquina e funcionamento com perfis novos.
-- Transmissão de voz, rolagem da loja e transições de foco/tela cheia.
+- Rolagem da loja e comportamento de foco/tela cheia em outras instalações. Microfone e voz já foram confirmados na instalação original.
 - Compatibilidade após atualizações do overlay e do site.
 - Revisão e autorização da equipe German Eiland antes de recomendar o protótipo amplamente.
 

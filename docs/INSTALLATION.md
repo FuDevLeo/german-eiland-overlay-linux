@@ -95,7 +95,7 @@ The shortcut produced by the Wine installer may launch the unadjusted Wine app. 
 
 Defaults: **F6** hides/shows; **F7** toggles combat/click-through lock; **F8** is hold-to-talk; **F9** mutes; **5** toggles the menu bar; **Ctrl+S** locks layout. The helpers follow the overlay's current bindings and register keyboard shortcuts only while The Isle has focus. Conflicting KDE keys are not stolen; mouse-button bindings are not implemented.
 
-Keep combat lock on while playing. To interact, first release the game's cursor and unlock the overlay with F7. Re-enable it before combat. **Esc** cancels a key capture; rebind one row at a time. Voice transmission remains unvalidated.
+Keep combat lock on while playing. To interact, first release the game's cursor and unlock the overlay with F7. Re-enable it before combat. **Esc** cancels a key capture; rebind one row at a time. Microphone and voice communication were confirmed working by the user in the original Fedora KDE installation; the portable package still needs testing on another machine.
 
 | Problem | Check |
 | --- | --- |
@@ -105,7 +105,8 @@ Keep combat lock on while playing. To interact, first release the game's cursor 
 | Hotkeys fail in game | Check KDE, key conflicts, game focus and the game's X11 window class. |
 | Port is already in use | Close the previous overlay or choose `--port 9341`; do not kill the game or expose the port to the network. |
 | Shop species menu is hidden | The helper replaces it with an in-page list. Site updates may require a new fix. Scrolling still needs complete regression testing. |
-| Microphone or fullscreen/desktop-edge issues | Check the local input device and app permission; voice transmission and focus transitions need wider validation. |
+| Microphone issues | Microphone and voice communication worked in the original installation. Check the local input device and app permission if your setup differs. |
+| Desktop panel appears at the screen edge | The user reported this resolved by using fullscreen with the overlay window-stacking workaround. Other installations still need testing. |
 
 ## Private files and removal
 
