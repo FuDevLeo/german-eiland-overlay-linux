@@ -1,0 +1,25 @@
+# Only source and documentation belong in this repository.
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+config.json
+*.log
+*.pid
+*.lock
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.zip
+*.tar*
+*.exe
+*.dll
+*.asar
+compatdata/
+pfx/
+.wine*/
+Cookies*
+Local Storage/
+Session Storage/

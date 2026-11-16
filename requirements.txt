@@ -1,0 +1,6 @@
+# Prefer distribution packages for desktop integration (especially dbus-python/PyGObject).
+Pillow>=10
+websockets>=14
+PySide6>=6.5
+dbus-python>=1.3
+PyGObject>=3.42
