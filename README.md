@@ -80,7 +80,7 @@ The helpers read the overlay's current keyboard bindings, so changed bindings ca
 | --- | --- |
 | F6 | Hide/show overlay |
 | F7 | Combat lock: pass mouse clicks to the game / allow overlay interaction |
-| F8 | Hold to talk — press/release forwarding is implemented; audio transmission is not validated by this package |
+| F8 | Hold to talk — microphone and voice communication confirmed working by the user in the original Fedora KDE setup |
 | F9 | Mute microphone |
 | 5 | Show/hide menu bar |
 | Ctrl+S | Lock/unlock overlay layout |
@@ -89,7 +89,7 @@ When interacting, release the game's cursor first, then unlock the overlay if ne
 
 ## Validation status
 
-The original local troubleshooting setup showed the overlay above the live game, a visible game background, clickable panels, and F7 working according to the user. Microphone permission and opening a local capture track were checked, but end-to-end voice transmission was not confirmed. Shop-list scrolling and later fullscreen/edge fixes did not receive a complete final regression check.
+The user confirmed the overlay above the live game, a visible game background, clickable panels, working F7, and working microphone and voice communication in the original Fedora KDE setup. The user also reported that using fullscreen resolved the desktop-edge issue. These are confirmations for that installation, not a clean-machine test of the portable package. The latest shop-list scrolling fix has not been separately confirmed.
 
 The **portable launcher and fresh-prefix distribution flow are newly prepared**. They have dependency/syntax checks, not an independent clean-machine playthrough. The successful local session used overlay 0.5.133 / Electron 42.10.1 and Proton Experimental; later versions may change the private UI internals this prototype relies on.
 

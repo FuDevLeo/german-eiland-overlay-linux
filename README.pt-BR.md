@@ -43,7 +43,7 @@ O guia explica:
 
 ## Limitações importantes
 
-O usuário confirmou a exibição do jogo atrás do overlay, menus clicáveis e o F7 no ambiente original. O pacote portátil, com perfil novo, ainda precisa de teste completo em outra instalação. A transmissão de voz e os últimos ajustes da loja e de tela cheia não foram validados integralmente.
+O usuário confirmou a exibição do jogo atrás do overlay, menus clicáveis, o F7, o microfone e a comunicação por voz funcionando na instalação original Fedora KDE. Também informou que o problema da borda da área de trabalho foi resolvido usando tela cheia. O pacote portátil, com perfil novo, ainda precisa de teste completo em outra instalação. A correção mais recente de rolagem da lista da loja não foi confirmada separadamente.
 
 O recorte não é transparência real com mistura de cores: pode cortar detalhes escuros e custa processamento. Há uma interface de diagnóstico Chromium na porta local 9340 enquanto o overlay roda; ela pode controlar a sessão do aplicativo. Não exponha nem encaminhe essa porta pela rede. Leia [privacidade e limitações](docs/PRIVACY-AND-LIMITATIONS.md).
 
