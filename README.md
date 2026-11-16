@@ -3,7 +3,7 @@
 **Unofficial, experimental companion scripts for the official German Eiland Overlay.**
 Developed during one Fedora KDE / Wayland + Xwayland troubleshooting session with The Isle Evrima. This is a starting point for the server owner and Linux users to review, not an official Linux release or a promise of compatibility.
 
-[Português](README.pt-BR.md) · [Privacy and technical limitations](docs/PRIVACY-AND-LIMITATIONS.md)
+[Português](README.pt-BR.md) · [Installation guide](docs/INSTALLATION.md) · [Privacy and technical limitations](docs/PRIVACY-AND-LIMITATIONS.md)
 
 ## What it does
 
@@ -18,16 +18,29 @@ Developed during one Fedora KDE / Wayland + Xwayland troubleshooting session wit
 
 Only source scripts, documentation, and a license for these scripts. **No official overlay executable, game files, Wine/Proton binaries, user profile, Steam login, cookies, screenshots, account data, or session logs are included.**
 
+## Wine or Proton? Both, at different steps
+
+| Step | Tool | What it does |
+| --- | --- | --- |
+| Install the official Windows setup `.exe` | **Wine** | Produces the installed application folder in a dedicated installer prefix. |
+| Run the installed overlay with these helpers | **Proton Experimental** | Runs the installed application in a separate, new runtime prefix. |
+| Run The Isle | **Steam, as usual** | Keeps the game's existing configuration and profile. |
+
+**The original working setup used Wine for installation and Proton for running.** Proton includes a Wine-derived runtime, but this does not make the installer step tested or unnecessary. A complete installation using only Proton has **not** been validated. These scripts expect the installed app, not the setup executable.
+
+Follow the [step-by-step installation guide](docs/INSTALLATION.md), or the [complete Portuguese guide](docs/INSTALACAO.pt-BR.md).
+
 ## Requirements
 
 - Linux desktop running **KDE Plasma / KWin**, a desktop D-Bus session, and X11/Xwayland (`DISPLAY`). Other compositors and native Wine Wayland are not supported by this prototype.
+- **Wine**, for the official installer in the documented installation path.
 - Steam's existing **Proton Experimental**, installed by the user. The game keeps its existing Steam launch configuration.
 - The official German Eiland Overlay, obtained from the server's official download. Keep the **entire installed application folder**, including `resources`, beside the executable. This project does not download it for you.
 - Python 3 with Pillow, websockets (including its synchronous client), dbus-python, PyGObject/GLib, and PySide6/QtGui. Also `xprop`, `libX11.so.6`, and `libXext.so.6`.
 
 Use your distribution's packages for desktop-integration libraries. `requirements.txt` names Python dependencies; it is not a guarantee that pip can build every desktop dependency on every distribution.
 
-## Usage
+## Usage after installing the official overlay
 
 After downloading, run `chmod +x launch.sh` once if the executable bit was not preserved.
 

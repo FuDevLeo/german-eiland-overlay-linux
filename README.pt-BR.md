@@ -13,26 +13,33 @@ Este pacote reúne os ajustes usados durante uma sessão de diagnóstico no **Fe
 - Remoção das sombras que viravam margens pretas.
 - Lista de espécies da loja dentro da própria página, sem menu nativo atrás do jogo.
 
-## Como começar
+## Precisa de Wine ou de Proton?
 
-Depois de baixar, execute `chmod +x launch.sh` uma vez se o arquivo não estiver marcado como executável.
+**No procedimento usado aqui, precisa dos dois, em etapas diferentes:**
 
-Leia os requisitos no [README principal](README.md). O pacote depende de bibliotecas Python, X11/Xwayland, D-Bus e KDE. Não instala esses componentes automaticamente.
+| Etapa | Programa | Para que serve |
+| --- | --- | --- |
+| Instalar o overlay oficial | **Wine** | Abre o instalador Windows e cria a pasta completa do aplicativo. |
+| Abrir o overlay com os ajustes Linux | **Proton Experimental** | Executa o aplicativo instalado com os scripts deste projeto. |
+| Jogar The Isle | **Steam** | Abre seu jogo normalmente, com a configuração que você já usa. |
 
-```bash
-./launch.sh --check
-./launch.sh --exe "/caminho/para/German Eiland Overlay.exe"
-```
+O Proton já contém uma versão derivada do Wine, mas **não validamos instalar tudo usando somente Proton**. A instalação original foi feita com Wine separado. O iniciador não executa o instalador: ele precisa do `German Eiland Overlay.exe` já instalado, junto com a pasta `resources`.
 
-É preciso manter a pasta completa do aplicativo oficial, com a pasta `resources`. Para escolher outra instalação do Proton, use `--proton "/caminho/para/Proton - Experimental/proton"`.
+## Instalação passo a passo
 
-Para criar um atalho no menu e guardar os caminhos somente no seu computador:
+➡️ **[Abrir o guia completo em português](docs/INSTALACAO.pt-BR.md)**
 
-```bash
-./launch.sh --exe "/caminho/para/German Eiland Overlay.exe" --install-shortcut
-```
+O guia explica:
 
-**Não envie para o GitHub** as pastas locais `~/.config/german-eiland-overlay-linux`, `~/.local/share/german-eiland-overlay-linux` ou `~/.local/state/german-eiland-overlay-linux`. Depois do uso elas podem conter sua sessão, caminhos e registros.
+1. Os requisitos de KDE, Steam, Wine, Proton e bibliotecas Python.
+2. Como instalar as dependências no Fedora, revisando a transação antes de confirmar.
+3. Como obter o instalador oficial e executá-lo em um prefixo separado.
+4. Como localizar o executável instalado, sem confundi-lo com o instalador.
+5. Como baixar este projeto, verificar dependências e abrir o overlay.
+6. Como criar o atalho, usar F6/F7 e resolver problemas comuns.
+7. O que é privado e como remover os ajustes.
+
+[Guia em inglês](docs/INSTALLATION.md) · [Descrição técnica](README.md) · [Privacidade e limitações](docs/PRIVACY-AND-LIMITATIONS.md)
 
 ## Limitações importantes
 
